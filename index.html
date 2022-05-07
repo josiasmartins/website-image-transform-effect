@@ -18,6 +18,7 @@
                     <li><a href="">Services</a></li>
                     <li><a href="">Here me</a></li>
                 </ul>
+                <img src="./dark theme icon/moon.png" id="icon" alt="icon moon">
             </nav>
 
             <div class="info">
@@ -41,5 +42,18 @@
                 <a href=""><i class="fab fa-dribbble"></i></a>
             </div>
         </div>
+
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function() {
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")) {
+                    icon.src = "./dark theme icon/sun.png";
+                } else {
+                    icon.src = "./dark theme icon/moon.png"
+                }
+            }
+        </script>
     </body>
 </html>
